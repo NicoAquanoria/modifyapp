@@ -16,6 +16,65 @@ Version control is essential for collaboration, tracking changes, and maintainin
 - Storybook for component-driven development
 - Atomic design system for UI consistency
 
+## Storybook Usage & Contribution
+
+Storybook is used for developing, documenting, and visually testing all UI components in isolation.
+
+### Running Storybook
+- **Option 1:** Toggle Storybook in `App.tsx` by setting `SHOW_STORYBOOK = true` and run the app as usual:
+  ```bash
+  npm start
+  # or
+  npx expo start
+  ```
+- **Option 2:** If a dedicated Storybook script is available:
+  ```bash
+  npm run storybook
+  ```
+
+### Adding/Updating Stories
+- Add new stories in the same directory as the component (e.g., `components/Button.stories.tsx`).
+- Document all relevant states: default, loading, error, interactive, disabled, etc.
+- Use clear, descriptive story names and props.
+- Reference Figma for design alignment.
+
+### Best Practices
+- Keep stories up to date as components evolve.
+- Use Storybook for design review and QA before merging new UI work.
+- Ensure all new components and states are covered in Storybook before submitting a PR.
+- Use stories to communicate component usage and edge cases to the team.
+
+## Git & GitHub Best Practices
+
+- **Commit Messages:**
+  - Use clear, descriptive commit messages (e.g., `feat: add login screen`, `fix: correct button color`).
+  - Keep commits small and focused on a single change or fix.
+
+- **Branching:**
+  - Create a new branch for each feature or bugfix (e.g., `feature/auth-flow`, `fix/image-upload-bug`).
+  - Use descriptive branch names that reflect the work being done.
+
+- **Pull Requests:**
+  - Open a pull request (PR) for every change, even if working solo, to document history and enable code review.
+  - Link PRs to relevant issues or tasks when possible.
+  - Request reviews and provide feedback on others' PRs.
+
+- **Collaboration Tips:**
+  - Communicate early and often about what you’re working on.
+  - Rebase or merge `main` regularly to avoid conflicts.
+  - Review code for clarity, maintainability, and adherence to project standards.
+
+- **Onboarding & Clean History:**
+  - Keep the `main` branch deployable and stable.
+  - Document setup steps and project conventions in the README.
+  - Squash or rebase commits before merging to keep history clean.
+
+### Recommended Improvements
+
+- **Feature Branches:** Always start new work on a feature branch and open a PR for merging.
+- **CI/CD:** Set up GitHub Actions or Expo EAS for automated testing, builds, and deployments.
+- **Code Quality:** Use tools like ESLint, Prettier, and Husky for linting, formatting, and pre-commit checks (if not already configured).
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
