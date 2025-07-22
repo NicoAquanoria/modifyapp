@@ -1,3 +1,21 @@
+# Modify App — Expo React Native, Storybook, Atomic Design System
+
+## Project Structure & Version Control
+
+### Previous Folder Structure Issue
+
+Initially, the project had a nested `modify/modify/.git` repository, which caused confusion and version control issues. This was resolved by restructuring the project so that all files and the `.git` directory are at the root level.
+
+### Importance of Version Control
+
+Version control is essential for collaboration, tracking changes, and maintaining professionalism in software development. This repository is now set up for robust React Native development with Storybook and an atomic design system, ensuring a scalable and maintainable codebase.
+
+### Current Setup
+
+- Expo React Native project at the root
+- Storybook for component-driven development
+- Atomic design system for UI consistency
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
