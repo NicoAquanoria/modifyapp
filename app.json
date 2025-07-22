@@ -37,6 +37,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "packagerOpts": {
+      "dev": true,
+      "strict": false,
+      "minify": false,
+      "urlType": "ip"
     }
   }
 }
